@@ -1,0 +1,9 @@
+go-mgba: Go bindings for mGBA
+Copyright (c) 2026 Vincent Audergon
+
+This project provides Go bindings for the mGBA Game Boy Advance emulator.
+
+- The Go source code is licensed under the Mozilla Public License 2.0 (MPL-2.0).
+- This project depends on libmgba (https://github.com/mgba-emu/mgba), which is also licensed under MPL-2.0.
+
+See LICENSE for the full text of the MPL-2.0.
