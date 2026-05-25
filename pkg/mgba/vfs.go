@@ -1,3 +1,6 @@
+// Author: Vincent Audergon <github.com/audergonv>
+// License: MPL-2.0
+
 package mgba
 
 /*
