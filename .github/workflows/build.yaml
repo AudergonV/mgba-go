@@ -1,0 +1,27 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      # libmgba-dev provides the C headers and shared library required by CGo
+      - name: Install libmgba
+        run: sudo apt-get update && sudo apt-get install -y libmgba-dev
+
+      - name: Build
+        run: make build
