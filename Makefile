@@ -12,6 +12,9 @@ test-race:
 test-bench:
 	go test -v -count=1 -bench=. -benchmem ./pkg/mgba/
 
+build-demo:
+	go build -o demo ./cmd/demo/
+
 demo:
 	go run ./cmd/demo/main.go $(ROM)
 
