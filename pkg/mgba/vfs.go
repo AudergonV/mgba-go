@@ -1,8 +1,6 @@
 package mgba
 
 /*
-#cgo CFLAGS: -I/opt/homebrew/include
-#cgo LDFLAGS: -L/opt/homebrew/lib -lmgba
 #include <mgba-util/vfs.h>
 #include <fcntl.h>
 #include <stdlib.h>
